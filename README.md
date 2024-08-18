@@ -56,5 +56,3 @@ To get started with the project, follow these steps:
     ```bash
     yarn run dev
     ```
-
-2. **Screens**

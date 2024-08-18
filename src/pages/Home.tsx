@@ -80,6 +80,7 @@ const Home: React.FC = () => {
 	};
 
 	useEffect(() => {
+		// preventing over usage of api calls because this is demo project
 		if (data) {
 			setIsLoading(false);
 		} else {

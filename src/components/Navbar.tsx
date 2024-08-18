@@ -3,6 +3,7 @@ import { BiHeart, BiSearch } from "react-icons/bi";
 import SearchPopup from "./SearchPopup";
 import { Link } from "react-router-dom";
 import useStore from "../store/zustand";
+import NavImage from "../assets/CineSphere.png";
 
 const Navbar = () => {
 	const [isPopupOpen, setPopupOpen] = useState<boolean>(false);
@@ -12,11 +13,7 @@ const Navbar = () => {
 		<nav className="absolute top-0 z-10  w-full sm:px-[5rem] px-[2rem] sm:py-[1rem] py-[0.5rem] text-white flex justify-between items-center">
 			<div className="logo-conatiner">
 				<Link to={"/"}>
-					<img
-						src="/src/assets/CineSphere.png"
-						alt=""
-						className="w-[100px] sm:w-[187px]"
-					/>
+					<img src={NavImage} alt="" className="w-[100px] sm:w-[187px]" />
 				</Link>
 			</div>
 			<div className="nav-options-container flex">
